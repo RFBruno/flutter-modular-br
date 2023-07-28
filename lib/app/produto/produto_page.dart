@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:flutter_modular_br/app/categoria/model/preco_model.dart';
+import 'package:flutter_modular_br/app/produto/produto_module.dart';
 
 class ProdutoPage extends StatelessWidget {
   const ProdutoPage({super.key});
@@ -16,6 +18,13 @@ class ProdutoPage extends StatelessWidget {
           children: [
             Text(
               Modular.args.params['nome'],
+            ),
+            TextButton(
+              onPressed: () {
+                var p = Modular.get<PrecoModel>();
+                print(p.hashCode);
+              },
+              child: Text('Get PrecoModel'),
             ),
           ],
         ),
