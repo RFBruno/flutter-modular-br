@@ -41,7 +41,7 @@ The main features of the application are:
 
 
 ## Links
-  - Repository: https://github.com/RFBruno/flutter-todo-br
+  - Repository: https://github.com/RFBruno/flutter-modular-br
 
   ## Versioning
 
